@@ -49,12 +49,9 @@ namespace PhoneApp5
             exclude.Add("Shared/Media");
             exclude.Add("Shared/ShellContent");
             exclude.Add("Shared/Transfers");
-
-            //filesCombo.Items.Clear();
-            //filesCombo.SelectedIndex = -1;
+            
             dirs = dirs.Except(exclude).ToList();
             //Uzupełnienie comboboxa
-            //DirectoriesCombo.Items.Clear();
             DirectoriesCombo.ItemsSource = dirs;
             DirectoriesCombo.SelectedIndex = -1;
         }
@@ -239,7 +236,7 @@ namespace PhoneApp5
                 }
                 catch
                 {
-
+                    MessageBox.Show("Błąd podczas usuwania");
                 }
             }
 
