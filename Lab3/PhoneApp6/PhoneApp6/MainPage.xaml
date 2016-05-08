@@ -60,7 +60,7 @@
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
             <TextBlock x:Name="txt_lat" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
-            <maps:Map x:Name="map" HorizontalAlignment="Left" Margin="0,42,0,0" VerticalAlignment="Top" Height="552" Width="456"/>
+            <maps:Map x:Name="map" HorizontalAlignment="Left" Margin="0,42,0,0" VerticalAlignment="Top" Height="552" Width="456" Loaded="map_Loaded"/>
         </Grid>
     </Grid>
 
